@@ -24,6 +24,21 @@ function click1() {
     r.innerHtML = none;
     return false;
   }
+  if (f1[0].value < 0) {
+    alert("Поле 1 не не может быть отрицательным!");
+    r.innerHtML = none;
+    return false;
+  }
+   if (f2[0].value < 0) {
+    alert("Поле 2 не может быть отрицательным!");
+    r.innerHtML = none;
+    return false;
+  }
+   if (f1[0].value < 0 && f2[0].value < 0) {
+    alert("Поля 1 и 2 не могут быть отрицательными числами!!!");
+    r.innerHtML = none;
+    return false;
+  }
   r.innerHTML = f1[0].value * f2[0].value;
   return false;
 }
