@@ -2,10 +2,8 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM fully loaded and parsed");
 });
-function onClick() {
-  alert("click");
-}
-function click1() {
+
+button.onclick = function() {
   let f1 = document.getElementsByName("cost");
   let f2 = document.getElementsByName("count");
   let r = document.getElementById("result");
